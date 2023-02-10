@@ -26,6 +26,10 @@ public class GamblingSimulation {
                 totalDays--;
         }System.out.println("Amount = " + amount);
         System.out.println("Wins = " + win + "  Loss = " + loss);
-        System.out.println("won by : " + (totalWin-totalloss));
+        if(win>loss){
+        System.out.println("won by : " + (totalWin-totalloss));}
+        else {
+            System.out.println("Lost by : " + (totalloss-totalWin));
+        }
     }
 }
